@@ -94,11 +94,6 @@ public class Requests {
         }
     }
 
-    @Step("Send Get request/api/ingredients")
-    public static void sendGetIngredients() {
-
-    }
-
     @Step("Send Post request /api/orders without auth")
     public static Response sendPostWithAuthOrders(String[] ingredients, String accessToken) {
         RestAssured.baseURI= "https://stellarburgers.nomoreparties.site";
