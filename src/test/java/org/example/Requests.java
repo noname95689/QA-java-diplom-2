@@ -74,7 +74,6 @@ public class Requests {
         AuthAnswer authAnswer =
                 response.body().as(AuthAnswer.class);
         String accessToken = authAnswer.getAccessToken().replace("Bearer ", "");
-        System.out.println(accessToken);
         return accessToken;
     }
 
