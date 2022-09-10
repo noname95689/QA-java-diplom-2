@@ -9,11 +9,11 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class CreateOrderTest {
 
-    public String email = "noname95689@yandex.ru";
-    public String password = "qwerty123";
-    public String name = "jeka";
+    public String email = TestData.getCorrectEmail();
+    public String password = TestData.getCorrectEmail();
+    public String name = TestData.getCorrectName();
     public String[] correctIngredients = {"61c0c5a71d1f82001bdaaa6d", "61c0c5a71d1f82001bdaaa6f", "61c0c5a71d1f82001bdaaa74"};
-    public String[] unCorrectIngredients = {"qwerty", "123456", "фывапр"};
+    public String[] unCorrectIngredients = {TestData.getWrongIngredient(), TestData.getWrongIngredient(), TestData.getWrongIngredient()};
 
     @Before
     public void beforeTests() {

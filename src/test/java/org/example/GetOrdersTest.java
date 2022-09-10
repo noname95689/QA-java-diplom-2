@@ -9,9 +9,9 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class GetOrdersTest {
 
-    public String email = "noname95689@yandex.ru";
-    public String password = "qwerty123";
-    public String name = "jeka";
+    public String email = TestData.getCorrectEmail();
+    public String password = TestData.getCorrectPassword();
+    public String name = TestData.getCorrectName();
     public String[] correctIngredients = {"61c0c5a71d1f82001bdaaa6d", "61c0c5a71d1f82001bdaaa6f", "61c0c5a71d1f82001bdaaa74"};
 
     @Before

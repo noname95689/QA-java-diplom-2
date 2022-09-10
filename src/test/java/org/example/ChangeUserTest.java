@@ -10,12 +10,12 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class ChangeUserTest {
 
-    public String email = "noname95689@yandex.ru";
-    public String password = "qwerty123";
-    public String name = "jeka";
-    public String newEmail = "test@yandex.ru";
-    public String newPassword = "123qwerty";
-    public String newName = "valentin";
+    public String email = TestData.getCorrectEmail();
+    public String password = TestData.getCorrectPassword();
+    public String name = TestData.getCorrectName();
+    public String newEmail = TestData.getCorrectEmail();
+    public String newPassword = TestData.getCorrectPassword();
+    public String newName = TestData.getCorrectName();
 
     @Before
     public void beforeTests() {
